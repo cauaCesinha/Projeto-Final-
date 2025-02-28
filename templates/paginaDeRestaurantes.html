@@ -11,15 +11,76 @@
         <img src="../static/img/LOGO.png" alt="Logo">
 
         <form action="pesquisar">
-            <input type="text" placeholder="O QUE VOCÊ QUER COMER HOJE?">
+            <input type="text" placeholder="Procurar...">
         </form>
 
     </header>
 
     <hr>
 
-    <div class="restaurante-container">
+    <div class="filtros-container main-container">
+        <h3>FILTROS DE BUSCA</h3>
+
+        <p>Nota mínima:</p>
+
+        <label for="nota-minima-1"><p>1</p></label>
+        <input type="radio" id="nota-minima-1" name="nota-minima" value="1"><br>
+
+        <label for="nota-minima-2"><p>2</p></label>
+        <input type="radio" id="nota-minima-2" name="nota-minima" value="2"><br>
+        
+        <label for="nota-minima-3"><p>3</p></label>
+        <input type="radio" id="nota-minima-3" name="nota-minima" value="3"><br>
+
+        <label for="nota-minima-4"><p>4</p></label>
+        <input type="radio" id="nota-minima-4" name="nota-minima" value="4"><br>
+
+        <label for="nota-minima-5"><p>5</p></label>
+        <input type="radio" id="nota-minima-5" name="nota-minima" value="5"><br>
+
+
+        <label for="tempo-espera">Tempo máximo de espera (minutos):</label>
+        <input type="number" id="tempo-espera" name="tempo-espera" min="0" max="120" step="5">
+
+        <p>Categoria:</p>
+        <input type="checkbox" id="doces-sobremesas" name="doces-sobremesas" value="Doces e sobremesas">
+        <label for="doces-sobremesas"> Doces e sobremesas</label><br>
+        <input type="checkbox" id="pratos-feito" name="pratos-feito" value="Pratos feitos">
+        <label for="pratos-feito"> Pratos feitos</label><br>
+        <input type="checkbox" id="salgados" name="salgados" value="Salgados">
+        <label for="salgados"> Salgados</label><br>    
+        <input type="checkbox" id="sorvetes-frios" name="sorvetes-frios" value="Sorvetes e frios">
+        <label for="sorvetes-frios"> Sorvetes e frios</label><br>    
+    </div>
+
+    <hr>
+
+    <div class="restaurante-container main-container">
+        <img src="" alt="Foto do restaurante" class="foto-restaurante">
+
         <h2>NOME RESTAURANTE</h2>
+
+        <p class="local"> <img src="../static/img/location-dot-solid.svg" alt="" height="30px"> Local do restaurante</p>
+
+        <div class="restaurante-info">
+            <p><b>TEMPO DE ENTREGA: </b>3 min</p>
+            <p><b>TAXA DE ENTREGA: </b>R$2,00</p>
+            <p><b>TELEFONE: </b>(11) 94002-8922</p>
+        </div>
+    </div>
+
+    <div class="restaurante-container">
+        <img src="" alt="Foto do restaurante" class="foto-restaurante">
+
+        <h2>NOME RESTAURANTE</h2>
+
+        <p class="local"> <img src="../static/img/location-dot-solid.svg" alt="" height="30px"> Local do restaurante</p>
+
+        <div class="restaurante-info">
+            <p><b>TEMPO DE ENTREGA: </b>5 min</p>
+            <p><b>TAXA DE ENTREGA: </b>R$0,00</p>
+            <p><b>TELEFONE: </b>(11) 98888-7654</p>
+        </div>
     </div>
 </body>
 </html>
