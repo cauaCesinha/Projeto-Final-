@@ -32,7 +32,8 @@ header {
 }
 
 header img {
- height: 100px ;
+  height: 100px;
+  padding: 10px;
 }
 
 header .linha1 {

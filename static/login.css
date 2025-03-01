@@ -2,18 +2,3 @@
     margin: 0;
     padding: 0;
  }
- :root {
-    --corprimaria : #F2E6CE;
-    --corsecundaria: #BF4E24;
-    --cordestaque:#A62103;
-    --corfont:#0D0D0D;
- }
- body, html {
-    background-color: var(--corprimaria);
-    color: var(--corfont);
-    font-family: 'Roboto';
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column: 1/-1;
-    
- }
