@@ -6,7 +6,7 @@ Paleta:
 #F2CC0F - Amarelo
 #F2A341 - Laranjinha
 #732509 - Laranja mesmo
-#BF4E24 - Vermelho forte
+#C40C0C - Vermelho forte
 #0D0D0D - Preto
 rgb(255, 253, 238) - branco para textos
 */
@@ -22,6 +22,7 @@ rgb(255, 253, 238) - branco para textos
 body {
  font-family: "Lexend";
  background-color: beige ;
+ color: #0D0D0D;
 }
 
 header {
@@ -32,8 +33,8 @@ header {
 }
 
 header img {
-  height: 100px;
-  padding: 10px;
+ height: 100px;
+ padding: 10px;
 }
 
 header .linha1 {
@@ -84,4 +85,38 @@ header input[type=text] {
  margin-top: 8px;
  margin-right: 16px;
  font-size: 17px;
+}
+
+@media screen and (max-width: 1000px) {
+  header h2 {
+    display: none;
+  }
+
+  header input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 8px;
+    font-size: 14px;
+  }
+}
+
+/*
+#######################
+FIM DO CÓDIGO DO HEADER
+#######################
+*/
+
+.main-container, header {
+  margin-bottom: 50px;
+}
+
+.main-container {
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+
+  background-color: #0d0d0d13;
+  padding: 10px;
+  border-radius: 5px;
 }
