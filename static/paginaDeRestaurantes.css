@@ -1,19 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+/*
+Paleta:
+#F2CC0F - Amarelo
+#F2A341 - Laranjinha
+#732509 - Laranja mesmo
+#BF4E24 - Vermelho forte
+#0D0D0D - Preto
+rgb(255, 253, 238) - branco para textos
+*/
+
+
+
+
 * {
-    margin: 0;
-    padding: 0;
- }
- :root {
-    --corprimaria : #F2E6CE;
-    --corsecundaria: #BF4E24;
-    --cordestaque:#A62103;
-    --corfont:#0D0D0D;
- }
- body, html {
-    background-color: var(--corprimaria);
-    color: var(--corfont);
-    font-family: 'Roboto';
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column: 1/-1;
-    
- }
+   margin: 0;
+   padding: 0;
+}
+
+body {
+ font-family: "Lexend";
+ background-color: beige ;
+}
+
+header {
+  background-color: #BF4E24;
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header img {
+ height: 100px ;
+}
+
+header .linha1 {
+ width: 100%;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+
+ background-color: #F2CC0F;
+}
+
+header h2 {
+ color: #BF4E24;
+ font-size: 3em;
+ font-style: italic;
+
+ text-shadow: 1px 3px 8px rgba(0,0,0,0.12);
+}
+
+nav {
+ width: 100%;
+}
+
+nav ul{
+ display: flex;
+ justify-content: space-around;
+
+ list-style-type: none;
+}
+
+nav li {
+ padding: 10px;
+}
+
+nav li:hover {
+ background-color: rgba(240, 248, 255, 0.231);
+}
+
+nav li a{
+ color: rgb(255, 253, 238);
+ text-decoration: none;
+}
+
+header input[type=text] {
+ float: right;
+ padding: 6px;
+ border: none;
+ margin-top: 8px;
+ margin-right: 16px;
+ font-size: 17px;
+}
