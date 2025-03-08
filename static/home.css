@@ -4,7 +4,8 @@
 /*
 Paleta:
 #F2CC0F - Amarelo
-#F2A341 - Laranjinha
+#F29A2E - Laranjinha
+#F2A341 - OUTRO LARANJA
 #732509 - Laranja mesmo
 #C40C0C - Vermelho forte
 #0D0D0D - Preto
@@ -121,21 +122,49 @@ FIM DO CÓDIGO DO HEADER
   border-radius: 5px;
 }
 
+
+/*
+#######################
+FIM DO CÓDIGO COMPARTILHADO ENTRE OS CSS
+#######################
+*/
+
+.destaques-container {
+  display: flex;
+  gap: 20px;
+  
+  justify-content: space-between;
+
+  background-color: transparent;
+}
+
 .ofertas, .novidades {
   display: flex;
   flex-direction: column;
   gap: 50px;
+
+  height: fit-content;
+
+  background-color: #0d0d0d13;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.ofertas h1, .novidades h1 {
+.ofertas {
+  width: 600px;
+}
+
+.main-container h1 {
   margin: auto;
-  color: #c40c0c;
+  color: #F29A2E;
 }
 
 .lanche-container {
   display: flex;
 
-  padding-bottom: 30px;
+  padding: 30px 10px;
+  border-radius: 5px;
+
   border-bottom: 1px solid #F2A341;
 
   margin-bottom: 10px;
@@ -153,8 +182,19 @@ FIM DO CÓDIGO DO HEADER
   flex-grow: 1;
 }
 
+.lanche-container:hover {
+  cursor: pointer;
+  background-color: rgba(240, 248, 255, 0.374);
+}
+
 .lanche-desc {
   margin-left: 10px;
+}
+
+.texto-preco {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 5px;
 }
 
 .nome-lanche {
@@ -172,15 +212,11 @@ FIM DO CÓDIGO DO HEADER
 .novidades {
   width: 300px;
 
+  background-color: transparent;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  margin: auto;
-}
-
-.novidades h1 {
-  color: #c40c0c;
 }
 
 .restaurante-container {
@@ -200,4 +236,117 @@ FIM DO CÓDIGO DO HEADER
   border-radius: 5px;
   
   object-fit: cover;
+}
+
+.categorias {
+  background-color: transparent;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.categorias h1 {
+  text-align: center;
+  width: 100%;
+
+  margin-bottom: 30px;
+}
+
+.categoria-card {
+  height: 300px;
+  max-width: 300px;
+
+  background-color: #F29A2E;
+  border-radius: 20px;
+  margin: 10px;
+
+  transition: all .5s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.categoria-card:hover {
+  cursor: pointer;
+  
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+}
+
+.categoria-card img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.categoria-card h2 {
+  color: rgb(255, 253, 238);
+
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.restaurantes {
+  background-color: transparent;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.restaurantes h1 {
+  text-align: center;
+  width: 100%;
+
+  margin-bottom: 30px;
+}
+
+.restaurante-card {
+  height: 300px;
+  max-width: 300px;
+
+  background-color: #F29A2E;
+  border-radius: 20px;
+  margin: 10px;
+
+  transition: all .5s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurante-card:hover {
+  cursor: pointer;
+  
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+}
+
+.restaurante-card img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.restaurante-card p {
+  color: rgb(255, 253, 238);
+
+  font-weight: normal;
+  font-size: 22px;
+  text-align: center;
+
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
