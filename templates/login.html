@@ -7,53 +7,24 @@
     <title>Rio Grande Lanches</title>
 </head>
 <body>
-    <div class="container-login">
+    <div class="container-login-main">
     
-    <img src="../static/img/LOGO.png" alt="Logo">
+    <img src="../static/img/LOGO.png" alt="Logo" id="logo-img">
 
-    <div>
+    <div class="forms-container">
         <h2>Entrar</h2>
 
         <form action="login">
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Digite seu email" name="email" required><br>
+        <label for="email">Email</label>
+        <input type="text" placeholder="Digite seu email" name="email" required>
     
-        <label for="senha"><b>Senha</b></label>
-        <input type="password" placeholder="Digite sua senha" name="senha" required><br>
+        <label for="senha">Senha</label>
+        <input type="password" placeholder="Digite sua senha" name="senha" required>
     
-        <button type="submit"><b>Login</b></button>
+        <button type="submit">Login</button>
+        <a href="cadastro.html">Não tenho conta...</a>
         </form>
     </div>
-
-    <div>
-        <h2>Cadastre-se!</h2>
-
-        <form action="cadastro">
-        <label for="nome"><b>Nome</b></label>
-        <input type="text" placeholder="Digite seu nome" name="nome" required><br>
-
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Digite seu email" name="email" required><br>
-    
-        <label for="senha"><b>Senha</b></label>
-        <input type="password" placeholder="Digite sua senha" name="senha" required><br>
-        
-        <p>Tipo de conta:</p>
-
-        <label for="tipo-usuario-consumidor"><b>Consumidor</b></label>
-        <input type="radio" id="tipo-usuario-consumidor" name="tipo-usuario" value="CONSUMIDOR" required><br>
-
-        <label for="tipo-usuario-gerente"><b>Gerente de restaurante</b></label>
-        <input type="radio" id="tipo-usuario-gerente" name="tipo-usuario" value="GERENTE" required><br>
-        
-        <label for="tipo-usuario-admin"><b>Administrador</b></label>
-        <input type="radio" id="tipo-usuario-admin" name="tipo-usuario" value="ADMINISTRADOR" required><br>
-    
-        <button type="submit"><p>Cadastro</p></button>
-        </form>
-    </div>
-    
-    
 
     </div>
 </body>
