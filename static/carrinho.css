@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
+/*
+Paleta:
+#F2CC0F - Amarelo
+#F29A2E - Laranjinha
+#F2A341 - OUTRO LARANJA
+#732509 - Laranja mesmo
+#C40C0C - Vermelho forte
+#0D0D0D - Preto
+rgb(255, 253, 238) - branco para textos
+*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+ }
+
 
 body {
     font-family: "Lexend", sans-serif;
@@ -22,6 +44,7 @@ header .linha1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
     background-color: #F2CC0F;
 }
 
