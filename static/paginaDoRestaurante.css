@@ -22,7 +22,7 @@ rgb(255, 253, 238) - branco para textos
 
 body {
  font-family: "Lexend";
- background-color: beige ;
+ background-color: beige;
  color: #0D0D0D;
 }
 
@@ -128,3 +128,150 @@ FIM DO CÓDIGO DO HEADER
 FIM DO CÓDIGO COMPARTILHADO ENTRE OS CSS
 #######################
 */
+
+.unidade-restaurante {
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+}
+
+.restaurante-desc {
+  padding: 10px;
+  width: 60%;
+}
+
+.restaurante-desc h2 {
+  text-align: center;
+}
+
+.restaurante-info {
+  padding: 10px;
+  width: 30%;
+  height: fit-content;
+
+  background-color: white;
+  border-radius: 10px;
+}
+
+.img-restaurante {
+  object-fit: cover;
+  width: 100%;
+
+  border-bottom: #F29A2E 4px solid;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.avaliacao-restaurante-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+img.amarelo {
+  height: 20px;
+  filter: invert(70%) sepia(94%) saturate(473%) hue-rotate(1deg) brightness(108%) contrast(102%);
+}
+
+.comentarios h3 {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.unidade-comentario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nome-usuario {
+  font-style: italic;
+}
+
+.conteudo-comentario {
+  margin-bottom: 10px;
+}
+
+.data {
+  color: #737373;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/*
+========= PARTE DA ESQUERDA ==========
+*/
+
+.lanche-container {
+  display: flex;
+
+  padding: 30px 10px;
+  border-radius: 5px;
+
+  border-bottom: 1px solid #F2A341;
+
+  margin-bottom: 20px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lanche-container button {
+  background-color: rgb(36, 141, 36);
+  margin-top: 10px;
+  padding: 5px 10px;
+
+  width: 100px;
+
+  border: none;
+  border-radius: 10px;
+
+  color: rgb(245, 251, 241);
+
+  justify-self: center;
+  transition: all 0.15s ease-in-out;
+}
+
+.lanche-container button:hover {
+  background-color: rgb(49, 119, 49);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+.lanche-container img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+.lanche-container .lanche-desc {
+  max-width: 250px;
+}
+
+.lanche-container:hover {
+  cursor: pointer;
+  background-color: rgba(240, 248, 255, 0.374);
+}
+
+.lanche-desc {
+  margin-left: 10px;
+}
+
+.texto-preco {
+  font-size: 16px;
+  padding: 20px 5px;
+}
+
+.nome-lanche {
+  font-size: 1.4em;
+  color: #BF4E24;
+  font-weight: bold;
+}
+
+.nome-restaurante {
+  font-style: italic;
+}
