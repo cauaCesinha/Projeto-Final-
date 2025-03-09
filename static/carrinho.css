@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+/*
+Paleta:
+#F2CC0F - Amarelo
+#F2A341 - Laranjinha
+#732509 - Laranja mesmo
+#C40C0C - Vermelho forte
+#0D0D0D - Preto
+rgb(255, 253, 238) - branco para textos
+*/
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 
 body {
     font-family: "Lexend", sans-serif;
@@ -80,6 +98,52 @@ header input[type=text] {
 }
 
 
+.containerTitulo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.linhaProgresso {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.progress-bar-bolinhas {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.bolinha {
+    width: 20px;
+    height: 20px;
+    background-color: #F2A341;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.bolinha.completo {
+    background-color: #C40C0C;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2CC0F;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    font-weight: bold;
+}
+
+.info h1 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #732509;
+}
+
 .carrinho {
     display: flex;
     align-items: center;
@@ -95,6 +159,7 @@ header input[type=text] {
 .product-card {
     display: flex;
     align-items: center;
+    flex: 1;
 }
 
 .product-card img {
@@ -105,12 +170,25 @@ header input[type=text] {
 }
 
 .product-info {
-    max-width: 300px;
+    flex: 1;
+}
+
+.product-info h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #732509;
+}
+
+.product-info p {
+    margin: 5px 0;
+    color: #0D0D0D;
 }
 
 .quantity-container {
     display: flex;
     align-items: center;
+    flex: 0.5;
+    justify-content: center;
 }
 
 .quantity-box {
@@ -125,10 +203,12 @@ header input[type=text] {
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+    color: white;
 }
 
 .quantity-box span {
     margin: 0 10px;
+    font-size: 1.1em;
 }
 
 .remove-btn {
@@ -141,8 +221,11 @@ header input[type=text] {
 }
 
 .price {
+    flex: 0.3;
+    text-align: right;
     font-size: 1.2em;
     font-weight: bold;
+    color: #732509;
 }
 
 
@@ -171,7 +254,7 @@ header input[type=text] {
     color: #C40C0C;
 }
 
-
+/* Estilos para os botões */
 .botao-container {
     display: flex;
     justify-content: center;
