@@ -4,7 +4,8 @@
 /*
 Paleta:
 #F2CC0F - Amarelo
-#F2A341 - Laranjinha
+#F29A2E - Laranjinha
+#F2A341 - OUTRO LARANJA
 #732509 - Laranja mesmo
 #C40C0C - Vermelho forte
 #0D0D0D - Preto
@@ -119,4 +120,135 @@ FIM DO CÓDIGO DO HEADER
   background-color: #0d0d0d13;
   padding: 10px;
   border-radius: 5px;
+}
+
+
+/*
+#######################
+FIM DO CÓDIGO COMPARTILHADO ENTRE OS CSS
+#######################
+*/
+
+.restaurante-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.foto-restaurante {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+}
+
+
+.restaurante-container h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-top: 10px;
+}
+
+
+.local {
+  font-size: 1em;
+  color: #666;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.local img {
+  height: 12px;
+}
+
+.restaurante-info {
+  margin-top: 15px;
+  font-size: 1em;
+  color: #444;
+}
+
+.restaurante-info p {
+  margin: 5px 0;
+}
+
+.restaurante-info b {
+  color: #333;
+}
+
+.filtros-container {
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+
+input[type="text"] {
+  padding: 8px;
+  margin-top: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+
+label {
+  font-size: 1em;
+  color: #333;
+}
+
+@media screen and (max-width: 1000px) {
+  .restaurante-container {
+    width: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .foto-restaurante {
+    width: 200px;
+    height: 200px;
+  }
+
+  .restaurante-container h2 {
+    font-size: 1.5em;
+  }
+
+  .local {
+    font-size: 0.9em;
+  }
+
+  .restaurante-info {
+    font-size: 0.9em;
+  }
+
+  .filtros-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  label {
+    font-size: 0.9em;
+  }
 }
