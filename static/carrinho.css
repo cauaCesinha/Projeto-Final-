@@ -237,6 +237,26 @@ header input[type=text] {
     max-width: 800px;
     text-align: center;
 }
+.barraTotal {
+  background-color: #F2CC0F;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.textTotal h1 {
+  font-size: 1.5em;
+  color: #732509;
+  margin: 0;
+}
+
+.precoTotal {
+  font-size: 1.2em;
+  color: #C40C0C;
+  font-weight: bold;
+}
 
 .valorContainer {
     display: flex;
@@ -254,7 +274,7 @@ header input[type=text] {
     color: #C40C0C;
 }
 
-/* Estilos para os botões */
+
 .botao-container {
     display: flex;
     justify-content: center;
